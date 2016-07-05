@@ -64,21 +64,21 @@ def perform(level, box, options):
 		z = startZ
 	else:
 		if (gravity == "West (-X)"):
-			x = box.maxx
+			x = box.maxx - 1
 		elif (gravity == "East (X)"):
 			x = box.minx
 		else:
 			x = box.minx + (box.maxx - box.minx) / 2
 
 		if (gravity == "Down (-Y)"):
-			y = box.maxy
+			y = box.maxy - 1
 		elif (gravity == "Up (Y)"):
 			y = box.miny
 		else:
 			y = box.miny + (box.maxy - box.miny) / 2
 
 		if (gravity == "North (-Z)"):
-			z = box.maxz
+			z = box.maxz - 1
 		elif (gravity == "South (Z)"):
 			z = box.minz
 		else:
